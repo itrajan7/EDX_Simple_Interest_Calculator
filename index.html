@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <br>
+        <div id="box"><br>
+        <h1>Simple Interest Calculator</h1>
+        <br>
+            Amount <input type="number"  id="principal"><br>
+            Rate <input type="range" min="1" max="20" step="0.25" value="1" id="rate" onchange="update()"><span id="rangeout">1</span><br>
+            <label for="years">No. of Years</label>
+            <select name="years" id="years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select><br><br>
+            <button onclick="compute()">Compute Interest</button><br><br>
+            <div id="Answer">
+                <p>If you deposit <mark><span id="princout">00.0</span></mark>,<br>
+                    at an interest rate of <mark><span id="rateout">00.0</span>%</mark>.<br>
+                    You will receive an amount of <mark><span id="result">00.0</span></mark>,<br>
+                    in the year <mark><span id="yearout">00.0</span></mark>.</p>
+            </div>
+        <p>Ⓒ Everyone Can Get Rich</p><br>
+        </div><br>
+        
+    </body>
+</html>
